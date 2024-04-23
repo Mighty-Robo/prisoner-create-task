@@ -27,4 +27,4 @@ def Prison (logout, pList):
             if logoutQ == "Y":
                 logout = True
 
-Prison (logout, prisonerList) #feed logout into the function directly. it works i guess
+Prison (logout, prisonerList) #feed logout into the function directly. it DOES NOT WORK WITHOUT THIS
