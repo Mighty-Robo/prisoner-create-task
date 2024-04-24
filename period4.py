@@ -1,7 +1,6 @@
 print("Welcome to the Silly Billy County prisoner records system")
 prisonerList = ["Jack Nelson", "Brooke Silly", "Lucas Bucas"]
 
-logout = False
 
 def nav():
     choice = input("Would you like to view the current prisoner list (1) or register a new prisoner? (2) ")
@@ -9,7 +8,8 @@ def nav():
 # ^ function that lets you choose options
 
  
-def Prison (logout, pList):
+def Prison (pList):
+    logout = False
     while logout == False:
         option = nav()
         if option == "1":
@@ -27,4 +27,4 @@ def Prison (logout, pList):
             if logoutQ == "Y":
                 logout = True
 
-Prison (logout, prisonerList) #feed logout into the function directly. it DOES NOT WORK WITHOUT THIS
+Prison (prisonerList) #feed logout into the function directly. it DOES NOT WORK WITHOUT THIS
